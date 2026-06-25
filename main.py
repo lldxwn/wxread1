@@ -80,8 +80,8 @@ logging.info(f"一共需要阅读 {READ_NUM} 次。")
 
 while index <= READ_NUM:
     data.pop('s')
-    # data['b'] = random.choice(book)
-    # data['c'] = random.choice(chapter)
+    data['b'] = random.choice(book)
+    data['c'] = random.choice(chapter)
     thisTime = int(time.time())
     data['ct'] = thisTime
     data['rt'] = thisTime - lastTime
